@@ -1,4 +1,5 @@
 import React from 'react'
+import '../CSS/Form.css'
 
 function Form() {
   return (
@@ -24,8 +25,8 @@ function Form() {
                 <label htmlFor='phoneNumber'>Phone Number</label>
                 <input id='phoneNumber' placeholder='+1-202-555-0174'></input>
             </div>
-            <button>Send Now</button>
         </form>
+            <button>Send Now</button>
       
     </div>
   )

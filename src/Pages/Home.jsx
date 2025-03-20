@@ -2,7 +2,16 @@ import React from "react";
 import "../CSS/Home.css";
 import Logo from "../assets/Logo.svg";
 import solution1 from "../assets/solution1.png";
-import { ArrowUpRight, ChevronLeft, ChevronRight, FolderOpen, Menu } from "lucide-react";
+import {
+  ArrowUpRight,
+  ChevronLeft,
+  ChevronRight,
+  FolderOpen,
+  Headphones,
+  Mail,
+  MapPin,
+  Menu,
+} from "lucide-react";
 import {
   AgentQL,
   AIDriven,
@@ -20,7 +29,7 @@ import {
 } from "../Utility/Exports";
 import Testimonials from "../Components/Testimonials";
 import Form from "../Components/Form";
-
+import Footer from "../Components/Footer";
 
 function Home() {
   return (
@@ -164,48 +173,62 @@ function Home() {
 
           <div className="tsquared-card-container">
             {tsqaured.map((card, idx) => (
-              <div className="tsquared-card" key={idx} style={{backgroundImage: `url(${card.backgroundImg})`,  backgroundPosition: "center", backgroundSize: "cover"}}>
-                <h4><FolderOpen />  {card.name}</h4>
+              <div
+                className="tsquared-card"
+                key={idx}
+                style={{
+                  backgroundImage: `url(${card.backgroundImg})`,
+                  backgroundPosition: "center",
+                  backgroundSize: "cover",
+                }}
+              >
+                <h4>
+                  <FolderOpen /> {card.name}
+                </h4>
                 <p>{card.description}</p>
 
                 <img src={card.image} alt="" />
-
               </div>
-            ))
-            }
+            ))}
           </div>
-          
         </div>
       </section>
       <section className="solutions-section">
         <div className="section-heading">
-          <h1>Choose Your Solution <br /> For Emerging Businnesses</h1>
-          <p>
-            Propel your new age business forrward with our Solutions:
-          </p>
+          <h1>
+            Choose Your Solution <br /> For Emerging Businnesses
+          </h1>
+          <p>Propel your new age business forrward with our Solutions:</p>
         </div>
         <div className="solutions-card-container">
-            <span className="solution-radial-gradient1"></span>
-            <span className="solution-radial-gradient2"></span>
-            <div className="plug-solution">
-              <img src={solution1} alt="" />
-              <h4>Plug and Play solutions</h4>
-              <div className="solution-description">
-                <p><span>Instant Integration, Immediate Impact:</span> <br /> Dive into the market without delay, utilizing our fully integrated tech stack that meshes seamlessly with your operations.</p>
-                <button>Customize Your Path</button>
-              </div>
+          <span className="solution-radial-gradient1"></span>
+          <span className="solution-radial-gradient2"></span>
+          <div className="plug-solution">
+            <img src={solution1} alt="" />
+            <h4>Plug and Play solutions</h4>
+            <div className="solution-description">
+              <p>
+                <span>Instant Integration, Immediate Impact:</span> <br /> Dive
+                into the market without delay, utilizing our fully integrated
+                tech stack that meshes seamlessly with your operations.
+              </p>
+              <button>Customize Your Path</button>
             </div>
-            <div className="custom-solution">
-              <img src={solution2} alt="" />
-              <h4>Customizable Solutions</h4>
-              <div className="solution-description">
-                <p>Customizable Solutions designed for your business's unique demands & growth trajectory. <br />
+          </div>
+          <div className="custom-solution">
+            <img src={solution2} alt="" />
+            <h4>Customizable Solutions</h4>
+            <div className="solution-description">
+              <p>
+                Customizable Solutions designed for your business's unique
+                demands & growth trajectory. <br />
                 <span>Build, Expand:</span> <br />
-                Engineered for long-term evolution, these solutions ensure your technology infrastructure grows as dynamically as your business.
-                </p>
-                <button>Accelerate with Plug & Play</button>
-              </div>
+                Engineered for long-term evolution, these solutions ensure your
+                technology infrastructure grows as dynamically as your business.
+              </p>
+              <button>Accelerate with Plug & Play</button>
             </div>
+          </div>
         </div>
       </section>
       <section className="testimonials-section">
@@ -218,35 +241,61 @@ function Home() {
           </p>
         </div>
         <div className="testimonials-container">
-        <button className="next" ><ChevronRight/></button>
-        <button className="prev" ><ChevronLeft /></button>
-        {testimonialsData.map((testimonial, idx) => (
-          <Testimonials testimonialData={testimonial} key={idx} />
-        ))}
+          <button className="next">
+            <ChevronRight />
+          </button>
+          <button className="prev">
+            <ChevronLeft />
+          </button>
+          {testimonialsData.map((testimonial, idx) => (
+            <Testimonials testimonialData={testimonial} key={idx} />
+          ))}
         </div>
       </section>
       <section className="form-section">
+        <div className="form-div">
         <Form />
+        </div>
         <div className="helpline-cards">
           <div className="helpline-card">
-            <h4>Location</h4>
-            <p>Turbostart Technology Development <br />Centre Pvt Ltd
-CIN: U72900TZ2022PTC029746 <br />
-Address: 1st Floor, Mayflower Valencia, <br />Avinashi Road, Coimbatore - 641004, TN, IN</p>
-            
+            <div className="helpine-icon">
+              <MapPin color="#2029C8" size={30} />
+            </div>
+            <div className="helpline-content">
+              <h4>Location</h4>
+              <p>
+                Turbostart Technology Development <br />
+                Centre Pvt Ltd CIN: U72900TZ2022PTC029746 <br />
+                Address: 1st Floor, Mayflower Valencia, <br />
+                Avinashi Road, Coimbatore - 641004, TN, IN
+              </p>
+            </div>
           </div>
           <div className="helpline-card">
-            <h4>Contact Number</h4>
-            <p>+91 75986581</p>
-            
+            <div className="helpine-icon">
+              <Headphones color="#2029C8" size={30} />
+            </div>
+            <div className="helpline-content">
+              <h4>Contact Number</h4>
+              <p>
+                +91 75986581
+              </p>
+            </div>
           </div>
           <div className="helpline-card">
-            <h4>Email Address</h4>
-            <p>t2c@tsquaredc.com</p>
-            
+            <div className="helpine-icon">
+              <Mail color="#2029C8" size={30} />
+            </div>
+            <div className="helpline-content">
+              <h4>email Address</h4>
+              <p>
+                t2c@tsquaredc.com
+              </p>
+            </div>
           </div>
         </div>
       </section>
+      <Footer />
     </main>
   );
 }
