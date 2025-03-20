@@ -1,7 +1,7 @@
 import React from "react";
 import "../CSS/footer.css";
 import Logo from "../assets/Logo.svg";
-import { FaLinkedin,FaTwitter, FaDiscord  } from "react-icons/fa";
+
 
 function Footer() {
   return (
@@ -14,10 +14,10 @@ function Footer() {
             follow T²C and make an impact!
           </p>
           <div className="social-links">
-            <a href="#"> <FaLinkedin color="#4f4f4f" size={30} /> </a>
-            <a href="#"> <FaTwitter color="#4f4f4f" size={30} /> </a>
-            <a href="#"> <FaDiscord  color="#4f4f4f" size={30} /> </a>
-            <a href="#"> <FaDiscord  color="#4f4f4f" size={30} /> </a>
+            <a href="#">  </a>
+            <a href="#">  </a>
+            <a href="#">  </a>
+            <a href="#">  </a>
           </div>
         </div>
         <div className="footer-navs">
