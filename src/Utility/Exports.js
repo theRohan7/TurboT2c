@@ -45,10 +45,6 @@ const Partners = [
 
 ]
 
-import AIDriven from '../assets/AI-Driven.png';
-import AgentQL from '../assets/agentQL.png';
-import fasterBuild from '../assets/faster-builds.png';
-import onDemand from '../assets/on-demand.png';
 
 import Tauth from '../assets/TAuth.png';
 import Tsend from '../assets/TSend.png';
@@ -145,10 +141,6 @@ const testimonialsData = [
 export {
     NavBtns,
     Partners,
-    AIDriven,
-    AgentQL,
-    fasterBuild,
-    onDemand,
     ken42Dashboard,
     optimileDashboard,
     turboCardsData,
