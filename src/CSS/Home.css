@@ -261,6 +261,7 @@ main {
   padding: 2rem 0rem;
   background-color: #000000;
   order: 2;
+  margin-top: -2px;
 }
 
 .innovation-section-heading {
@@ -352,12 +353,15 @@ main {
 
 .technology-section {
   order: 3;
+  margin-top: -2px;
 }
 .about-TSquare {
   order: 4;
+  margin-top: -2px;
 }
 .Tsqaured-container {
   order: 5;
+  margin-top: -2px;
 }
 .Tsqaured-container {
   background: #000000;
@@ -437,6 +441,7 @@ main {
   box-sizing: border-box;
   order: 6;
   position: relative;
+  margin-top: -2px;
 }
 
 .solutions-card-container {
@@ -578,6 +583,7 @@ main {
   box-sizing: border-box;
   order: 7;
   position: relative;
+  margin-top: -2px;
 }
 
 .form-section {
@@ -590,6 +596,7 @@ main {
   justify-content: center;
   box-sizing: border-box;
   order: 8;
+  margin-top: -2px;
 }
 
 .helpline-cards {
@@ -636,6 +643,7 @@ main {
 
 .footer-section {
   order: 9;
+  margin-top: -2px;
 }
 
 @media screen and (max-width: 1024px) {
