@@ -212,7 +212,7 @@ main {
    position: absolute;
    bottom: 10%;
    right: 50%;
-   transform: translate(-25% ,30%);
+   transform: translate(-25% ,40%);
    z-index: 10;
 }
 
@@ -231,7 +231,7 @@ main {
   position: absolute;
   bottom: -20%;
   right: 60%;
-  transform: translate(135% ,20%);
+  transform: translate(130% ,45%);
 
 
 
@@ -241,7 +241,7 @@ main {
   padding: 1rem 1.5rem 0rem 1.5rem;
   bottom: -10%;
   right: 50%;
-  transform: translate(60% ,-85%);
+  transform: translate(60% ,-65%);
 
 }
 
@@ -253,7 +253,7 @@ main {
   position: absolute;
   bottom: -10%;
   right: 60%;
-  transform: translate(70% ,139%);
+  transform: translate(70% ,149%);
 }
 
 .innovation-section {
