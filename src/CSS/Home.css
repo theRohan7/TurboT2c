@@ -2,7 +2,6 @@ main {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-
 }
 .hero-section {
   background-image: url("../assets/Background.jpg");
@@ -167,6 +166,95 @@ main {
   box-sizing: border-box;
 }
 
+.image-card {
+  background: linear-gradient(
+      0deg,
+      rgba(181, 181, 181, 0.03),
+      rgba(181, 181, 181, 0.03)
+    ),
+    radial-gradient(
+      107.4% 65.38% at 0% 100%,
+      rgba(6, 113, 253, 0.5) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  border: 0.98px solid #ffffff4d;
+  backdrop-filter: blur(70.0189208984375px);
+  box-shadow: 12px 2px 45px 25px #00000030;
+  padding: 1rem 1rem 0rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.image-card h4{
+  font-weight: 700;
+  font-size: 0.8rem;
+  line-height: 26.46px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #DFFDFF;
+}
+
+.image-card p{
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+  width: 100%;
+}
+
+.image-card img {
+  height: 8rem;
+  border-radius: 8px 8px 0px 0px;
+  mix-blend-mode:hue(0deg);
+  filter:grayscale(100%) opacity(0.4);
+
+}
+
+.fast-build{
+   position: absolute;
+   bottom: 10%;
+   right: 50%;
+   transform: translate(-25% ,30%);
+   z-index: 10;
+}
+
+
+
+.end-to-end{
+  position: absolute;
+  bottom: -20%;
+  right: 60%;
+  transform: translate(135% ,20%);
+
+
+
+}
+.on-demand{
+  position: absolute;
+  padding: 1rem 1.5rem 0rem 1.5rem;
+  bottom: -10%;
+  right: 50%;
+  transform: translate(60% ,-85%);
+
+}
+
+.on-demand img{
+  padding: 0.5rem;
+  width: 12rem;
+}
+.ai-solution{
+  position: absolute;
+  bottom: -10%;
+  right: 60%;
+  transform: translate(70% ,139%);
+}
+
 .innovation-section {
   width: 100%;
   padding: 2rem 0rem;
@@ -259,16 +347,16 @@ main {
   color: #ffffff;
 }
 
-.technology-section{
+.technology-section {
   order: 3;
 }
-.about-TSquare{
+.about-TSquare {
   order: 4;
 }
-.Tsqaured-container{
+.Tsqaured-container {
   order: 5;
 }
- .Tsqaured-container {
+.Tsqaured-container {
   background: #000000;
   width: 100%;
   margin-top: -1px;
@@ -280,7 +368,6 @@ main {
   justify-content: center;
   box-sizing: border-box;
 }
-
 
 .about-TSquare {
   width: 100%;
@@ -335,21 +422,21 @@ main {
   max-height: 500px;
 }
 
-.solutions-section{
-    background: #000000;
-    width: 100%;
-    padding: 2rem 4rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    justify-content: center;
-    box-sizing: border-box;
-    order: 6;
-    position: relative;
+.solutions-section {
+  background: #000000;
+  width: 100%;
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+  box-sizing: border-box;
+  order: 6;
+  position: relative;
 }
 
-.solutions-card-container{
+.solutions-card-container {
   width: 100%;
   display: flex;
   gap: 1.5rem;
@@ -403,7 +490,7 @@ main {
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0%;
-  color: #909DC1;
+  color: #909dc1;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -426,7 +513,7 @@ main {
   line-height: 22px;
   letter-spacing: 0%;
   color: #ffffff;
-  background-color: #2029C8;
+  background-color: #2029c8;
   border-radius: 26px;
   border: none;
   padding: 0.5rem 1rem;
@@ -452,13 +539,17 @@ main {
   max-height: 10rem;
 }
 
-.solution-radial-gradient1, 
+.solution-radial-gradient1,
 .solution-radial-gradient2 {
   content: "";
   position: absolute;
   width: 40%;
   height: 100%;
-  background: radial-gradient(50% 50% at 50% 50%, #0F142F 39.5%, rgba(15, 20, 47, 0) 100%);
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #0f142f 39.5%,
+    rgba(15, 20, 47, 0) 100%
+  );
   z-index: 0;
   pointer-events: none;
 }
@@ -473,81 +564,76 @@ main {
   right: 80%;
 }
 
-.testimonials-section{
-    background: #000000;
-    width: 100%;
-    padding: 2rem 4rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    order: 7;
-    position: relative;
+.testimonials-section {
+  background: #000000;
+  width: 100%;
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  order: 7;
+  position: relative;
 }
 
-.form-section{
-    background: #000000;
-    width: 100%;
-    padding: 2rem 4rem;
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    justify-content: center;
-    box-sizing: border-box;
-    order: 8;
+.form-section {
+  background: #000000;
+  width: 100%;
+  padding: 2rem 4rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+  box-sizing: border-box;
+  order: 8;
 }
 
-.helpline-cards{
+.helpline-cards {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1rem;
   width: 40%;
-  
 }
 
-.helpline-card{
+.helpline-card {
   width: 100%;
-  background-color: #0E0F13;
+  background-color: #0e0f13;
   border: 1px solid #333333;
-  box-shadow: 0px 0px 25.59px 0px #0000000D;
+  box-shadow: 0px 0px 25.59px 0px #0000000d;
   padding: 1rem;
   display: flex;
   gap: 1rem;
   border-radius: 16px;
 }
 
-.helpline-content{
+.helpline-content {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.helpline-content h4{
+.helpline-content h4 {
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 22px;
   letter-spacing: 0%;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.helpline-content p{
+.helpline-content p {
   font-weight: 400;
   font-size: 1rem;
   line-height: 25px;
   letter-spacing: 0%;
-  color: #BCC3D7;
+  color: #bcc3d7;
 }
 
-.footer-section{
+.footer-section {
   order: 9;
 }
-
-
-
-
 
 @media screen and (max-width: 1024px) {
   .navbar {
@@ -584,10 +670,9 @@ main {
     width: 100%;
   }
 
-  .about-TSquare{
+  .about-TSquare {
     display: flex;
     flex-direction: column;
-
   }
 
   .about-T-content {
@@ -608,16 +693,44 @@ main {
     background-image: url("../assets/mobBCG.png");
   }
 
-  .about-TSquare{
+  .text-content{
+  
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text-content h1{
+    text-align: center;
+  }
+
+  .text-content p{
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .text-content button{
+      align-self: center;
+  }
+
+  .partners-container{
+    display: none;
+  }
+
+  .image-content{
+     width: 100%;
+     position: relative;
+  }
+
+  .about-TSquare {
     order: 3;
   }
-  .Tsqaured-container{
+  .Tsqaured-container {
     order: 4;
   }
-  .technology-section{
+  .technology-section {
     order: 5;
   }
- 
+
   .navbar {
     padding: 1rem 2rem;
   }
@@ -634,7 +747,61 @@ main {
   }
 
   .partners img {
-    width: 6rem;
+    height: 4rem;
+  }
+
+  .image-content{
+    width: 100%;
+    position: static;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image-card{
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+
+  .secondary-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+
+  .on-demand, .end-to-end, .ai-solution {
+    position: static;
+    transform: none;
+    flex: 1 1 30%;
+  }
+
+  .on-demand {
+    padding: 1rem;
+  }
+
+  .on-demand img {
+    width: 100%;
+    padding: 0;
+  }
+
+  .fast-build {
+    position: static;
+    transform: none;
+    width: 100%;
+    flex-direction: row-reverse;
+    padding: 1rem;
+  }
+
+  .fast-build .card-content p{
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 18.59px;
+  color: #ffffff;
+  }
+  .fast-build img {
+    border-radius:8px
   }
 
   .innovation-section-heading,
@@ -649,52 +816,52 @@ main {
   .solutions-section {
     padding: 2rem 1rem;
   }
-  
+
   .solutions-card-container {
     flex-direction: column;
     overflow-x: hidden;
   }
-  
+
   .plug-solution,
   .custom-solution {
     width: 100%;
     min-width: auto;
   }
-  
+
   .solution-description {
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
   }
-  
+
   .solution-description p {
     border-right: none;
     border-bottom: 1px solid #393939;
     padding-right: 0;
     padding-bottom: 1rem;
     width: 100%;
+    font-size: 1rem;
   }
-  
+
   .solution-button {
     align-self: center;
     margin-top: 0.5rem;
   }
-  
+
   .solution-radial-gradient1,
   .solution-radial-gradient2 {
     display: none;
   }
 
-  .form-section{
+  .form-section {
     flex-direction: column;
   }
-  .helpline-cards{
+  .helpline-cards {
     width: 100%;
   }
-  .helpline-card{
+  .helpline-card {
     padding: 1.5rem 1rem;
   }
- 
 }
 
 @media screen and (max-width: 480px) {

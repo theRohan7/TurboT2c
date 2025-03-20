@@ -2,15 +2,10 @@ import React from "react";
 import "../CSS/Home.css";
 import Logo from "../assets/Logo.svg";
 import solution1 from "../assets/solution1.png";
+import { Headphones, Mail, MapPin, Menu } from "lucide-react";
 import {
-  Headphones,
-  Mail,
-  MapPin,
-  Menu,
-} from "lucide-react";
-import {
-  AgentQL,
-  AIDriven,
+  aiSolution,
+  endToEnd,
   fasterBuild,
   ken42Dashboard,
   NavBtns,
@@ -77,7 +72,32 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="image-content">sadfasf</div>
+          <div className="image-content">
+            <div className="image-card fast-build">
+              <div className="card-content">
+                <h4>Faster Builds</h4>
+                <p>
+                  Our proprietary accelerators cut development time, helping you
+                  get to market faster.
+                </p>
+              </div>
+              <img src={fasterBuild} alt="Faster Builds" />
+            </div>
+            <div className="secondary-cards">
+              <div className="image-card on-demand">
+                <h4>flexible, On Demand</h4>
+                <img src={onDemand} alt="On Demand" />
+              </div>
+              <div className="image-card end-to-end">
+                <h4>End to End Developement</h4>
+                <img src={endToEnd} alt="" />
+              </div>
+              <div className="image-card ai-solution">
+                <h4>AI Driven Solutions</h4>
+                <img src={aiSolution} alt="ai-solutions" />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section className="innovation-section">
@@ -117,28 +137,28 @@ function Home() {
         <TechnologySection />
       </section>
       <section className="about-TSquare">
-          <span className="radial-gradient"></span>
-          <div className="about-T-content">
-            <h1>About TSquaredC</h1>
-            <p>
-              At T2C, we push the boundaries of technology for businesses
-              worldwide by creating solutions that are both innovative and
-              robust. Our focus is on seamless integration and strategic
-              innovation, ensuring efficient operations and scalable growth.
-              <br />
-              <br />
-              <br />
-              We are committed to empowering businesses in a digital-first
-              world, simplifying complex systems to address challenges and
-              unlock opportunities. Our scalable solutions are designed for high
-              performance, prioritizing customer success and sustainable growth.
-            </p>
-          </div>
-          <img src={rocketImage} alt="" />
-        </section>
+        <span className="radial-gradient"></span>
+        <div className="about-T-content">
+          <h1>About TSquaredC</h1>
+          <p>
+            At T2C, we push the boundaries of technology for businesses
+            worldwide by creating solutions that are both innovative and robust.
+            Our focus is on seamless integration and strategic innovation,
+            ensuring efficient operations and scalable growth.
+            <br />
+            <br />
+            <br />
+            We are committed to empowering businesses in a digital-first world,
+            simplifying complex systems to address challenges and unlock
+            opportunities. Our scalable solutions are designed for high
+            performance, prioritizing customer success and sustainable growth.
+          </p>
+        </div>
+        <img src={rocketImage} alt="" />
+      </section>
       <section className="Tsqaured-container">
-         <WhyTSection />
-        </section>
+        <WhyTSection />
+      </section>
       <section className="solutions-section">
         <div className="section-heading">
           <h1>
@@ -158,7 +178,7 @@ function Home() {
                 into the market without delay, utilizing our fully integrated
                 tech stack that meshes seamlessly with your operations.
               </p>
-              <button className="solution-button" >Customize Your Path</button>
+              <button className="solution-button">Customize Your Path</button>
             </div>
           </div>
           <div className="solution-card custom-solution">
@@ -172,7 +192,9 @@ function Home() {
                 Engineered for long-term evolution, these solutions ensure your
                 technology infrastructure grows as dynamically as your business.
               </p>
-              <button className="solution-button" >Accelerate with Plug & Play</button>
+              <button className="solution-button">
+                Accelerate with Plug & Play
+              </button>
             </div>
           </div>
         </div>
@@ -182,7 +204,7 @@ function Home() {
       </section>
       <section className="form-section">
         <div className="form-div">
-        <Form />
+          <Form />
         </div>
         <div className="helpline-cards">
           <div className="helpline-card">
@@ -205,9 +227,7 @@ function Home() {
             </div>
             <div className="helpline-content">
               <h4>Contact Number</h4>
-              <p>
-                +91 7598658
-              </p>
+              <p>+91 7598658</p>
             </div>
           </div>
           <div className="helpline-card">
@@ -216,15 +236,13 @@ function Home() {
             </div>
             <div className="helpline-content">
               <h4>email Address</h4>
-              <p>
-                t2c@tsquaredc.com
-              </p>
+              <p>t2c@tsquaredc.com</p>
             </div>
           </div>
         </div>
       </section>
       <section className="footer-section">
-      <Footer />
+        <Footer />
       </section>
     </main>
   );

@@ -136,6 +136,13 @@ const testimonialsData = [
   },
 ]
 
+const fasterBuild = 'https://s3-alpha-sig.figma.com/img/f558/869b/b8e5b3d72051b4782622b3a4ab96bafb?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=ja983O3vG5Sh79yeGpQTV6chRREobU8N--NkBm1drypdeDybYiwEAxrbqoadwD~paIlu4pFeZz0e8az-FPoZ8YQFI5oGKs8WA6NM9EZUodALLgkOD5xi2jt7ObVMOruAMwRAwXajeRHNTJIyt94xeOVxK0KBfEshYZm72ZbOYY-a0Hxp35phI0znpVhVJalgGTojonPwL5aGUwvtFgq1VgNxcIwkGx6-f2yc0HvsAExDRyFceUCPDwnWjnPTnHxTJFbUrgMFVJhxjZ8TApAwXgKZE-XB7DgeAWcuIE2wFeFFVGna0zUK4Vl3ygYdqiyKJiPSIxXQDJAZZ-7Ybgwmng__'
+
+const onDemand = 'https://s3-alpha-sig.figma.com/img/66e4/830c/4e611ee6bbfe20cda9a84f0e1fdf7410?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=a8dLWN1~u5qVfgDxo1ULHc~wVtWYJcwX6cdrjAEgjGO~esPiCeBLTqdrXh47exV~xKS1AJLrfHu3OJzwCQQq5gx6OFiE0gw4iXBnHcS5nVtclpBWoFVs6vDpTIb3mVAlFih3e3rg-r5UxsMMHkDcF0Ag4D7wQxyo8TFP-Qjm6tISnzYRdyFljU7R29H5n-SYYWln6IQnRU2KmYuhxFIOsh5jxVASg9CUapsFpydL4hVh77KYXpnOKb3Uf~gPbntVxMUdGUEic269qoLnONbGfd~50wXYIr1QBK81bZWwKPYR6fmT2qgSzkqmXcEj9JSbM5vs~Lj9zySe44X9WfWuJQ__'
+
+const endToEnd = 'https://s3-alpha-sig.figma.com/img/164c/c9fc/67c1071804d2c5b1a1da6cee9da6c178?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=KgxtYKVq8jLbi6ysTfxq8UzMtvMQ7ZS5HZfItNaraujHQPDk87G~i87o5xxrNziKBjgOfBWUxxKHjPR8GNszu97Ks6-rUaKmgA62simmfxbv5WN7uG20jncgDwIP~i0V52ssXQK8vmyTVa0P5iXSOr8Hhm0notjUEhHhDHLaPcLKNyhtIhnub6FUs7RUPnzUAUnwO48QLF5V3AsQ0Ky6WmsbWwjq9BubRZAnCc2QRRpADPVVlMCeZKOTB~biFqRVpLr-B3fy-VD4pax1wqNQQkDhZyJGBwK-~ULbLOzCtn7LL7T0radU7Cu3j6dDAMHaUkWTOUvGBtrVuYAbs4cpPA__'
+
+const aiSolution = 'https://s3-alpha-sig.figma.com/img/6a1a/f232/0a074ebbe8b73bd2f5411fe3f53c3b0b?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=IFgmvP3P87YFU6cGw5ANGZMkMntHp7-SonxAYGfoGBaOUkj7CezhKrZdUJDoP1U-UZz4xf2ZZk1pyRI9hZVFKvCdL2xwk0UEzac6PS3Zhd~Y2Ij3eMPjPErpgAGyE8WhDay0UQNndEFYD9AHTbpflZDrYhtyBGeBbZpFnGpiNl79QRUCW5aZGrqt2y1nz4fRE83yKpZ7ln9~4MGqqFiEP8Yf95KPjyscXOxYvicDropUmwAE0uVwevA7~zP0XUvTcouhtODoxcu7sZAU-duy1apsfPBPU-7dl8z1QE1rrha68LVo85kVhiOgXRG371EBVH1f4D7198Mo7io5CiK7Vg__'
 
 
 export {
@@ -147,5 +154,9 @@ export {
     rocketImage,
     tsqaured,
     solution2,
-    testimonialsData
+    testimonialsData,
+    fasterBuild,
+    aiSolution,
+    onDemand,
+    endToEnd
 }

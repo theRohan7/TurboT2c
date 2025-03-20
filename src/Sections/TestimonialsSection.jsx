@@ -33,8 +33,11 @@ function TestimonialsSection() {
           >
             <ChevronLeft />
           </button>
+          <span className='radial-gradient1'></span>
+            <span className='radial-gradient2'></span>
           
           <div className="testimonials-container" ref={carouselRef}>
+            
             {testimonialsData.map((testimonial, idx) => (
               <Testimonials testimonialData={testimonial} key={idx} />
             ))}
