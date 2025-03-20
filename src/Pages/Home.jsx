@@ -3,10 +3,6 @@ import "../CSS/Home.css";
 import Logo from "../assets/Logo.svg";
 import solution1 from "../assets/solution1.png";
 import {
-  ArrowUpRight,
-  ChevronLeft,
-  ChevronRight,
-  FolderOpen,
   Headphones,
   Mail,
   MapPin,
@@ -23,13 +19,12 @@ import {
   Partners,
   rocketImage,
   solution2,
-  testimonialsData,
-  tsqaured,
-  turboCardsData,
 } from "../Utility/Exports";
-import Testimonials from "../Components/Testimonials";
 import Form from "../Components/Form";
 import Footer from "../Components/Footer";
+import TechnologySection from "../Sections/TechnologySection";
+import WhyTSection from "../Sections/WhyTSection";
+import TestimonialsSection from "../Sections/TestimonialsSection";
 
 function Home() {
   return (
@@ -119,29 +114,9 @@ function Home() {
         </div>
       </section>
       <section className="technology-section">
-        <div className="section-heading">
-          <h1>Technology, Turbocharged </h1>
-          <p>
-            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            nulla velit, maximus sit amet suscipit in, fermentum id est.
-            Suspendisse consequat ornare elit.”
-          </p>
-        </div>
-        <div className="turbo-cards-container">
-          {turboCardsData.map((card, idx) => (
-            <div className="turbo-card" key={idx}>
-              <img src={`${card.image}`} alt="Turbo Card" />
-              <div className="card-content">
-                <h3>{card.name}</h3>
-                <p>{card.description}</p>
-                <a href="#">
-                  Check Now <ArrowUpRight />
-                </a>
-              </div>
-            </div>
-          ))}
-        </div>
-        <div className="about-TSquare">
+        <TechnologySection />
+      </section>
+      <section className="about-TSquare">
           <span className="radial-gradient"></span>
           <div className="about-T-content">
             <h1>About TSquaredC</h1>
@@ -160,39 +135,10 @@ function Home() {
             </p>
           </div>
           <img src={rocketImage} alt="" />
-        </div>
-
-        <div className="Tsqaured-container">
-          <h1>Why Choose TSquaredC</h1>
-
-          <p>
-            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            nulla velit, maximus sit amet suscipit in, fermentum id est.
-            Suspendisse consequat ornare elit.”
-          </p>
-
-          <div className="tsquared-card-container">
-            {tsqaured.map((card, idx) => (
-              <div
-                className="tsquared-card"
-                key={idx}
-                style={{
-                  backgroundImage: `url(${card.backgroundImg})`,
-                  backgroundPosition: "center",
-                  backgroundSize: "cover",
-                }}
-              >
-                <h4>
-                  <FolderOpen /> {card.name}
-                </h4>
-                <p>{card.description}</p>
-
-                <img src={card.image} alt="" />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+        </section>
+      <section className="Tsqaured-container">
+         <WhyTSection />
+        </section>
       <section className="solutions-section">
         <div className="section-heading">
           <h1>
@@ -203,7 +149,7 @@ function Home() {
         <div className="solutions-card-container">
           <span className="solution-radial-gradient1"></span>
           <span className="solution-radial-gradient2"></span>
-          <div className="plug-solution">
+          <div className="solution-card plug-solution">
             <img src={solution1} alt="" />
             <h4>Plug and Play solutions</h4>
             <div className="solution-description">
@@ -212,10 +158,10 @@ function Home() {
                 into the market without delay, utilizing our fully integrated
                 tech stack that meshes seamlessly with your operations.
               </p>
-              <button>Customize Your Path</button>
+              <button className="solution-button" >Customize Your Path</button>
             </div>
           </div>
-          <div className="custom-solution">
+          <div className="solution-card custom-solution">
             <img src={solution2} alt="" />
             <h4>Customizable Solutions</h4>
             <div className="solution-description">
@@ -226,31 +172,13 @@ function Home() {
                 Engineered for long-term evolution, these solutions ensure your
                 technology infrastructure grows as dynamically as your business.
               </p>
-              <button>Accelerate with Plug & Play</button>
+              <button className="solution-button" >Accelerate with Plug & Play</button>
             </div>
           </div>
         </div>
       </section>
       <section className="testimonials-section">
-        <div className="section-heading">
-          <h1>Testimonials</h1>
-          <p>
-            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-            nulla velit, maximus sit amet suscipit in, fermentum id est.
-            Suspendisse consequat ornare elit.”
-          </p>
-        </div>
-        <div className="testimonials-container">
-          <button className="next">
-            <ChevronRight />
-          </button>
-          <button className="prev">
-            <ChevronLeft />
-          </button>
-          {testimonialsData.map((testimonial, idx) => (
-            <Testimonials testimonialData={testimonial} key={idx} />
-          ))}
-        </div>
+        <TestimonialsSection />
       </section>
       <section className="form-section">
         <div className="form-div">
@@ -295,7 +223,9 @@ function Home() {
           </div>
         </div>
       </section>
+      <section className="footer-section">
       <Footer />
+      </section>
     </main>
   );
 }

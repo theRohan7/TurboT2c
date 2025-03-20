@@ -97,3 +97,15 @@ color: #909dc1;
     margin-right: 1rem;
 }
 
+@media (max-width: 768px){
+    footer{
+        padding: 2rem 3rem;
+    }
+    .footer-content{
+        flex-direction:column-reverse;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+}
+

@@ -1,0 +1,124 @@
+.why-t-section {
+    background: #000000;
+    width: 100%;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  .section-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  
+.Tsqaured-container{
+    width: 100%;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.Tsqaured-container h1{
+    font-weight: 600;
+    font-size: 2.5rem;
+  background: linear-gradient(90deg, #909dc1 0%, #3663de 100%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.Tsqaured-container p{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 30px;
+    letter-spacing: 0px;
+    color: #909dc1;
+    text-align: center;
+    width: 60%;
+    width: 90%;
+    max-width: 800px;
+}
+.tsquared-card-container{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.tsquared-card{
+  padding: 1.25rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 16px;
+  overflow: hidden;
+
+}
+
+.card-content h4{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.card-content p{
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 20px;
+    letter-spacing: 0%;
+    color: #A7B2CF;
+    text-align: left;
+}
+
+.card-content img{
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0px 0px 57.75px 7.15px #FFFFFF1C inset;
+}
+
+.card-image{
+    filter:  grayscale(100%);
+    opacity: 0.9;
+    mix-blend-mode: lighten;
+}
+
+.tsquared-card-container::-webkit-scrollbar {
+    display: none; 
+  }
+
+  @media (max-width: 768px) {
+    .why-t-section {
+      padding: 2rem 1rem;
+    }
+    
+    .tsquared-card-container {
+      overflow-x: auto;
+      justify-content: flex-start;
+    }
+    
+    .tsquared-card {
+      min-width: 100%;
+      max-width: 100%;
+      flex: 0 0 100%;
+    }
+  }

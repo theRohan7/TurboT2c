@@ -1,52 +1,94 @@
-.testimonial-card{
+.testimonial-card {
     background-image: url("../assets/Figure.png");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     border-radius: 10px;
-    padding: 1rem;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
     border: none;
     align-items: center;
-}
-
-.testimonial-card p{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  
+ 
+  
+  .testimonial-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+  }
+  
+  .testimonial-card p {
     font-size: 1rem;
     font-weight: 400;
     line-height: 30px;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     color: #C7C9D1;
     text-align: center;
-}
-
-.testimonial-card .user-info{
+    position: relative;
+    z-index: 2;
+  }
+  
+  .user-info {
     display: flex;
     align-self: flex-start;
     align-items: center;
     gap: 1rem;
-}
-
-.testimonial-card .user-info img{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+  }
+  
+  .user-avatar {
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid #C7C9D1;
-}
-
-.testimonial-card .user-info-content{
+    background-color: #444; 
+  }
+  
+  .user-info-content {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-}
-
-.testimonial-card .user-info-content span{
+  }
+  
+  .user-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #ffffff;
+  }
+  
+  .user-org {
     font-size: 0.8rem;
     font-weight: 400;
     line-height: 20px;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     color: #C7C9D1;
-    ;
-}
+  }
+
+@media (max-width: 768px) {
+    .testimonial-card {
+      padding: 1.25rem;
+      gap: 1.25rem;
+    }
+    
+    .testimonial-card p {
+      font-size: 0.95rem;
+      line-height: 28px;
+    }
+    
+    .user-avatar {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+  }
