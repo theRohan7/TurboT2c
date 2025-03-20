@@ -53,15 +53,28 @@
   
   .turbo-card img {
     width: 100%;
-
+    height: 8rem;
     object-fit: cover;
   }
   
-  .card-content {
+  .turbo-card-content {
     padding: 1rem;
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
+  }
+
+  .turbo-card-content h3{
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 23.2px;
+    vertical-align: middle;
+    color: #FAFAFA;
+  }
+
+  .turbo-card-content p{
+    color: #909DC1;
+    font-size: 0.8rem;
   }
   
   .card-link {
@@ -118,17 +131,13 @@
       max-width: 100%;
       flex: 0 0 100%;
     }
+
+    .turbo-card-content p{
+      font-size: 1rem;
+    }
     
     .carousel-button {
       display: flex;
     }
 
-    .card-content h3{
-      font-weight: 400;
-      font-size: 1rem;
-      line-height: 23.2px;
-      letter-spacing: 0%;
-      vertical-align: middle;
-      color: #FAFAFA;
-    }
   }

@@ -156,7 +156,7 @@ main {
 }
 
 .partners img {
-  height: 4rem;
+  height: 3.5rem;
   filter: brightness(0) invert(1);
 }
 
@@ -190,7 +190,7 @@ main {
   margin-bottom: 1rem;
 }
 
-.image-card h4{
+.image-card h4, .fast-build .card-content h4{
   font-weight: 700;
   font-size: 0.8rem;
   line-height: 26.46px;
@@ -199,14 +199,6 @@ main {
   color: #DFFDFF;
 }
 
-.image-card p{
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 100%;
-  letter-spacing: 0%;
-  color: #FFFFFF;
-  width: 100%;
-}
 
 .image-card img {
   height: 8rem;
@@ -222,6 +214,15 @@ main {
    right: 50%;
    transform: translate(-25% ,30%);
    z-index: 10;
+}
+
+.fast-build .card-content p{
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+  width: 100%;
 }
 
 
