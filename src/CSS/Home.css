@@ -691,7 +691,7 @@ main {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .hero-section {
     background-image: url("../assets/mobBCG.png");
   }

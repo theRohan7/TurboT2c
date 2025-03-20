@@ -76,7 +76,7 @@
     color: #C7C9D1;
   }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .testimonial-card {
       padding: 1.25rem;
       gap: 1.25rem;
