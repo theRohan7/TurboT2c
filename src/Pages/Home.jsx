@@ -278,7 +278,7 @@ function Home() {
             <div className="helpline-content">
               <h4>Contact Number</h4>
               <p>
-                +91 75986581
+                +91 7598658
               </p>
             </div>
           </div>
