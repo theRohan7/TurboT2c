@@ -38,3 +38,16 @@ src/
     └── export.js
 ```
 
+## Feel free to reach out to me for any questions or feedback.
+
+## Thank you for your time and effort.
+
+## Best regards,
+
+Rohan Sahu
+
+LinkedIn: [https://www.linkedin.com/in/rohansahu7/]
+
+Email: [mailto:therohansahu7@gmail.com]
+
+
